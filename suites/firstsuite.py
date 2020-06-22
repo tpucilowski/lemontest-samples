@@ -17,7 +17,7 @@ class firstsuite:
         pass
 
     @lcc.test("test3")
-    @lcc.tags("equinix")
+    @lcc.tags("example")
     def test3(self):
         r = requests.get('http://dummy.restapiexample.com/api/v1/employees')
         check_that("http code", r.status_code, is_(200))

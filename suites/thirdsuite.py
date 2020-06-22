@@ -4,8 +4,10 @@ from lemoncheesecake.matching import check_that, is_
 
 
 @lcc.suite("my_suite")
+@lcc.tags("contact")
 class thirdsuite:
     @lcc.test("Submit existing application or sent less than 3 months ago")
+    @lcc.tags("update_contact")
     def req1(self):
         url = 'http://api.dev.compareking.no/api/application'
         payload = {
